@@ -8,7 +8,7 @@ using AOC22.Misc;
 
     if (args.Length == 0) // Run all days
     {
-        for (var i = 1; i < dayTypes.Count; i++)
+        for (var i = 1; i < dayTypes.Count +1; i++)
             (Activator.CreateInstance(dayTypes[i]) as IDailyPuzzle)?.Run(InputHelper.ReadInputLines(i));
     }
     else // run single day
